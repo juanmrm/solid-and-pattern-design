@@ -1,0 +1,13 @@
+= SOLID and Design Patterns
+
+Principios basicos de la POO (Programación Orientada a Objetos).
+
+- S -> Single responsability principle.
+
+- O -> Open / Closed principle.
+
+- L -> Liskov substitution principle.
+
+- I -> Interface segregation principle.
+
+- D -> Dependency Inversion principle.

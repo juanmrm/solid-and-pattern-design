@@ -1,0 +1,29 @@
+Este proyecto representa una aplicacion de recomendacion de peliculas.
+
+El codigo que os interesa esta en la clase Recomendador. Esta clase tiene dos metodos:
+- recomendaciones: devuelve la lista de recomendaciones para un cliente
+- recomendacionesCSV : devuelve la lista de recomendaciones en formato CSV (comma separated value)
+
+Una pelicula tiene titulo, director y genero
+Un cliente tiene nombre y lista de peliculas favoritas
+
+El algoritmo de recomendacion se basa en proponer peliculas de directores que han gustado al cliente.
+
+A parte, hay un test con dos metodos de prueba. Los dos fallan debido a que representan cambios
+que queremos en nuestro codigo.
+
+Para ejecutar el test debeis ir a test/org/formacion/srp/TestRecomendador.java y, con el boton
+derecho seleccionar run as -> JUnit Test
+
+El test requiere que hagais dos cambios funcionales:
+- que la lista de recomendaciones no incluya las peliculas que ya ha visto el cliente
+- que el formato csv cambie del actual <titulo, genero, director> a <titulo, director, genero>
+
+Como veis son dos cambios diferentes: uno en el algoritmo de recomendacion, otro en la forma de
+transmitir los datos. En la implementacion actual, los dos cambios deben realizarse en la misma clase,
+violando el principio de "unica responsabilidad".
+
+Refactorizad el codigo para que estas dos responsabilidades esten en clases diferentes. 
+Despues, adaptad el codigo del test para la nueva estructura.
+
+Suerte y no dudeis en preguntar cualquier duda.
