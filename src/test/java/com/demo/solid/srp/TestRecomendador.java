@@ -18,9 +18,10 @@ public class TestRecomendador {
 	
 	@Test 
 	public void test_formato() {
-		Recomendador r = new Recomendador();
-		
-		String csv = r.recomendacionesCSV(BBDD.JUAN);
+		Recomendador recomendador = new Recomendador();
+		RecomendadorToCSV recomendadorToCSV = new RecomendadorToCSV();
+
+		String csv = recomendadorToCSV.recomendacionesCSV(recomendador.recomendaciones(BBDD.JUAN));
 		
 		String esperado = "Salvar al soldado Ryan,Spielberg,belico";
 		
