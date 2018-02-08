@@ -11,7 +11,7 @@ public class TestProcesadorTexto {
 	@Test
 	public void test_simple() {
 		
-		IProcesadorBasico procesador = new ProcesadorTexto();
+		ProcesadorBasico procesador = new ProcesadorTextoImpl();
 		
 		procesador.nueva("No");
 		procesador.nueva("himporta");
@@ -24,7 +24,7 @@ public class TestProcesadorTexto {
 	@Test
 	public void test_con_idioma() {
 		
-		ProcesadorTexto procesador = new ProcesadorTexto();
+		ProcesadorComplejo procesador = new ProcesadorTextoImpl();
 		
 		procesador.nueva("Tengo");
 		procesador.nueva("hambre");

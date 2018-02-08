@@ -1,5 +1,5 @@
 package com.demo.solid.isp;
 
-public interface ICorrectorOrtografico {
+public interface ProcesadorComplejo extends ProcesadorBasico {
     boolean correcto (Idioma idioma);
 }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ProcesadorTexto implements IProcesadorBasico, ICorrectorOrtografico {
+public class ProcesadorTextoImpl implements ProcesadorBasico, ProcesadorComplejo {
 
 	private List<String> texto = new ArrayList<>();
 

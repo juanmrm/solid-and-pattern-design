@@ -1,6 +1,6 @@
 package com.demo.solid.isp;
 
-public interface IProcesadorBasico {
+public interface ProcesadorBasico {
 
     void nueva (String palabra);
 
