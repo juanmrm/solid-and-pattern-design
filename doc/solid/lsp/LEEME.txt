@@ -1,0 +1,13 @@
+En este caso, vuestra tarea sera mas destructiva que constructiva ;-)
+
+Teneis un colega que presume de lo inutil que son los principios SOLID.
+
+Al mismo tiempo, ha construido un sistema de pruebas TestPuntos.java
+que prueba que su tipo Punto2D cumple con un principio basico de geometria:
+  - dos puntos p1 y p2 son iguales si y solo si la distancia de p1 a p2 es igual a 0
+  
+Modificad en el test para que la lista puntos_prueba tenga una entrada que haga fallar la prueba
+(en particular, debera demostrar que Punto3D no es un substituto seguro de Punto2D).
+
+OJO: como veis, este test es diferente: el punto de partida es un test que funciona y el 
+resultado es un test que falla !!
