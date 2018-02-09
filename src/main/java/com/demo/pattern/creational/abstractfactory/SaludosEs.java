@@ -1,4 +1,4 @@
-package com.demo.pattern.creational.abs.factory;
+package com.demo.pattern.creational.abstractfactory;
 
 public class SaludosEs implements Saludos {
 
