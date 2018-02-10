@@ -29,3 +29,7 @@ Separa la construcción del objeto de su representación.
 Esto lo conseguimos creando los objetos con el factory method especificado en una interfaz e implementado en clases o en una clase base y sobreescrito en las clases que la extiendebn.
 
 - Prototype: creamos una instancia nueva a partir de otra ya existente que sirve como prototipo. Se usa cuando la creación de una instancia totalmente nueva es muy costosa.
+
+- Clone: crea un nuevo objeto del mismo tipo y copia todos sus campos.
+
+- Singleton: se asegura de que solo existe una instancia de la clase y proporciona un unico punto de acceso global a ella. El constructor debe ser privado.
