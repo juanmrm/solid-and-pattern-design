@@ -27,3 +27,5 @@ Separa la construcción del objeto de su representación.
 
 - Factory Method: lo utilizamos para crear objetos sin tener que especificar la clase exacta del objeto de que queremos crear y sin llamar a su constructor directamente.
 Esto lo conseguimos creando los objetos con el factory method especificado en una interfaz e implementado en clases o en una clase base y sobreescrito en las clases que la extiendebn.
+
+- Prototype: creamos una instancia nueva a partir de otra ya existente que sirve como prototipo. Se usa cuando la creación de una instancia totalmente nueva es muy costosa.
