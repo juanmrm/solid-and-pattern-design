@@ -33,3 +33,9 @@ Esto lo conseguimos creando los objetos con el factory method especificado en un
 - Clone: crea un nuevo objeto del mismo tipo y copia todos sus campos.
 
 - Singleton: se asegura de que solo existe una instancia de la clase y proporciona un unico punto de acceso global a ella. El constructor debe ser privado.
+
+=== Structural
+
+Se refieren a la composición de clases y objetos. El concepto de herencia se usa para componer interfaces y definir formas de componer objetos para obtener nuevas funcionalidades.
+
+- Adapter: convierte la interfaz de una clase en otra interfaz que los clientes esperan. Permite que las clases funcionen juntas, lo que de otra forma no podría ser debido a interfaces incompatibles.

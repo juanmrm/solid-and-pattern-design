@@ -1,0 +1,15 @@
+Nuestra aplicacion bancaria BanconNostrum esta ganando millones de dolares diarios gracias
+a su sofisticada funcionalidad.
+
+Esta funcionalidad esta representada en la interface BancoNostrum e implementada en la clase
+BancoNostrumImpl.
+
+Para su expasion internacional necesitamos que nuestros clientes puedan acceder a la funcionalidad
+implementada en BancoNostrumImpl a partir de la interface estandar InternationalMoneyOrganization.
+
+Queremos hacer esto sin tocar nada de nuestra clase BancoNostrumImpl ni, por supuesto, de nuestra
+interface BancoNostrum.
+
+Para probar tu codigo utiliza el test que encontraras en:
+test/org/formacion/InternationalMoneyTests.java
+
