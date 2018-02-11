@@ -39,3 +39,7 @@ Esto lo conseguimos creando los objetos con el factory method especificado en un
 Se refieren a la composición de clases y objetos. El concepto de herencia se usa para componer interfaces y definir formas de componer objetos para obtener nuevas funcionalidades.
 
 - Adapter: convierte la interfaz de una clase en otra interfaz que los clientes esperan. Permite que las clases funcionen juntas, lo que de otra forma no podría ser debido a interfaces incompatibles.
+
+- Bridge: usado cuando tenemos que desacoplar una abstracción de su implementación para que las 2 partes puedan modificarse independientemente.
+
+- Composite: permite que el cliente trate objetos individuales y compuestos de forma uniforme. Esta clase proporciona formas de modificar su grupo de objetos.
