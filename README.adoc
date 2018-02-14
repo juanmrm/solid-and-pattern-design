@@ -48,3 +48,5 @@ Se refieren a la composición de clases y objetos. El concepto de herencia se us
 
 - Facade: oculta las complejidades del sistema y proporciona una interfaz al cliente simplificada. Incluye una sola clase que proporciona métodos simplificados requeridos por el cliente y delega llamadas a métodos de clases de sistema existentes.
 Esto no implica que no vayamos a poder acceder a los sistemas de más bajo nivel, simplemente es una interfaz de más alto nivel que nos simplificará ciertas operaciones.
+
+- Flyweight: usado principalmente para reducir la cantidad de objetos creados y disminuir el uso de memoria (+ rendimiento). Proporciona formas de disminuir la cantidad de objetos, mejorando así la estructura de objetos de la aplicación.
