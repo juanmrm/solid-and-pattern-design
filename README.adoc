@@ -50,3 +50,8 @@ Se refieren a la composición de clases y objetos. El concepto de herencia se us
 Esto no implica que no vayamos a poder acceder a los sistemas de más bajo nivel, simplemente es una interfaz de más alto nivel que nos simplificará ciertas operaciones.
 
 - Flyweight: usado principalmente para reducir la cantidad de objetos creados y disminuir el uso de memoria (+ rendimiento). Proporciona formas de disminuir la cantidad de objetos, mejorando así la estructura de objetos de la aplicación.
+
+- Proxy: proporciona un substituto de otro objeto (real-object) y controla también el acceso al mismo (seguridad). Esta es su motivacion, restringir el acceso.
+
+- Virtual Proxy: la motivación en este caso es el performance. Retrasa la creación del objeto real al máximo. Se crea la instancia del objeto real la primera vez que el cliente realiza una solicitud al proxy.
+Este recuerda la identidad de este objeto real y reenvía la solicitud a este objeto real. Luego, todas las solicitudes posteriores simplemente se reenvían directamente al objeto real encapsulado evitando la creación n veces.
