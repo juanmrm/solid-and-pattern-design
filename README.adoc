@@ -15,6 +15,8 @@ Principios basicos de la POO (Programación Orientada a Objetos).
 == Patterns
 '''
 
+En general los autores favorecen o se decantan por usar la composición en lugar de la herencia.
+
 === Creational
 
 Facilitan la creación de objetos ocultando la lógica de creación y evitando el tener que usar el operador new directamente.
@@ -38,20 +40,20 @@ Esto lo conseguimos creando los objetos con el factory method especificado en un
 
 Se refieren a la composición de clases y objetos. El concepto de herencia se usa para componer interfaces y definir formas de componer objetos para obtener nuevas funcionalidades.
 
-- Adapter: convierte la interfaz de una clase en otra interfaz que los clientes esperan. Permite que las clases funcionen juntas, lo que de otra forma no podría ser debido a interfaces incompatibles.
+- Adapter: la motivación es convertir la interfaz de una clase en otra interfaz que los clientes esperan. Permite que las clases funcionen juntas, lo que de otra forma no podría ser debido a interfaces incompatibles.
 
 - Bridge: usado cuando tenemos que desacoplar una abstracción de su implementación para que las 2 partes puedan modificarse independientemente.
 
 - Composite: permite que el cliente trate objetos individuales y compuestos de forma uniforme. Esta clase proporciona formas de modificar su grupo de objetos.
 
-- Decorator: permite agregar nuevas funcionalidades a un objeto existente sin alterar su estructura. Crea una clase de decorador que envuelve la clase original y proporciona la uncionalidad adicional pero manteniendo la firma de los métodos de clase intactos.
+- Decorator: la motivacion es agregar nuevas funcionalidades a un objeto existente sin alterar su estructura. Crea una clase de decorador que envuelve la clase original y proporciona la uncionalidad adicional pero manteniendo la firma de los métodos de clase intactos.
 
-- Facade: oculta las complejidades del sistema y proporciona una interfaz al cliente simplificada. Incluye una sola clase que proporciona métodos simplificados requeridos por el cliente y delega llamadas a métodos de clases de sistema existentes.
+- Facade: la motivacion es ocultar las complejidades del sistema y proporcionar una interfaz al cliente pero simplificada. Incluye una sola clase que proporciona métodos simplificados requeridos por el cliente y delega llamadas a métodos de clases de sistema existentes.
 Esto no implica que no vayamos a poder acceder a los sistemas de más bajo nivel, simplemente es una interfaz de más alto nivel que nos simplificará ciertas operaciones.
 
 - Flyweight: usado principalmente para reducir la cantidad de objetos creados y disminuir el uso de memoria (+ rendimiento). Proporciona formas de disminuir la cantidad de objetos, mejorando así la estructura de objetos de la aplicación.
 
-- Proxy: proporciona un substituto de otro objeto (real-object) y controla también el acceso al mismo (seguridad). Esta es su motivacion, restringir el acceso.
+- Proxy: la motivacion es controlar el acceso y lo hace proporcionando un substituto de otro objeto (real-object) y añadiendo restricciones.
 
 - Virtual Proxy: la motivación en este caso es el performance. Retrasa la creación del objeto real al máximo. Se crea la instancia del objeto real la primera vez que el cliente realiza una solicitud al proxy.
 Este recuerda la identidad de este objeto real y reenvía la solicitud a este objeto real. Luego, todas las solicitudes posteriores simplemente se reenvían directamente al objeto real encapsulado evitando la creación n veces.
