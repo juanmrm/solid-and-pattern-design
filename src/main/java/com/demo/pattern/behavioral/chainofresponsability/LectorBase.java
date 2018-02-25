@@ -2,19 +2,17 @@ package com.demo.pattern.behavioral.chainofresponsability;
 
 import lombok.AllArgsConstructor;
 
+import java.util.Optional;
+
 @AllArgsConstructor
-public abstract class LectorBase implements LectorDocumentos{
-
-    private final TipoDocumento tipo;
+public abstract class LectorBase implements DocumentProcess{
 
     @Override
-    public String contenido(Documento documento) {
-        return this.tipo.getNombre() + " " + documento.getContenido();
+    public Optional<String> processDocument(ProcessChain pc, Documento doc) {
+        Optional<String> result = this.content(doc);
+        return result.isPresent() ? result : pc.processDocument(pc, doc);
     }
 
-    @Override
-    public boolean puedeProcesarDocumento(Documento documento) {
-        return this.tipo.equals(documento.getTipo());
-    }
+    public abstract Optional<String> content(Documento documento);
 
 }
