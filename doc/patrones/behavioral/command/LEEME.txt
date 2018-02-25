@@ -1,0 +1,9 @@
+En este ejercicio continuaremos con el ejemplo visto en la leccion.
+
+Observa las dos implementaciones de TratamientoPedido: TratamientoPedidoMultiple y TratamientoPeligroso. 
+Cada una recibe en el constructor el tipo de pedido que puede tratar e implementa el metodo tratar().
+
+En el test encontrareis las instrucciones: crear una nueva implementacion de nombre TratamientoPedidoInternacional que
+acepte todas las peticiones excepto las que van a Mordor (mas detalles en el test)
+
+Este es demasiado facil, eh? ;-)
