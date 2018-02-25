@@ -38,7 +38,7 @@ Esto lo conseguimos creando los objetos con el factory method especificado en un
 
 === Structural
 
-Se refieren a la composición de clases y objetos. El concepto de herencia se usa para componer interfaces y definir formas de componer objetos para obtener nuevas funcionalidades.
+Se refieren a la composición de clases y objetos. Se usan para componer interfaces y definir formas de componer objetos para obtener nuevas funcionalidades.
 
 - Adapter: la motivación es convertir la interfaz de una clase en otra interfaz que los clientes esperan. Permite que las clases funcionen juntas, lo que de otra forma no podría ser debido a interfaces incompatibles.
 
@@ -57,3 +57,10 @@ Esto no implica que no vayamos a poder acceder a los sistemas de más bajo nivel
 
 - Virtual Proxy: la motivación en este caso es el performance. Retrasa la creación del objeto real al máximo. Se crea la instancia del objeto real la primera vez que el cliente realiza una solicitud al proxy.
 Este recuerda la identidad de este objeto real y reenvía la solicitud a este objeto real. Luego, todas las solicitudes posteriores simplemente se reenvían directamente al objeto real encapsulado evitando la creación n veces.
+
+=== Behavioral
+
+Están específicamente relacionados con la comunicación entre objetos.
+
+- Chain of Responsability: crea una cadena de objetos receptores para una solicitud. Este patrón desacopla al emisor y al receptor de una solicitud en función del tipo de solicitud.
+En este patrón, normalmente cada receptor contiene una referencia a otro receptor. Si un objeto no puede manejar la solicitud, pasa el mismo al siguiente receptor y así sucesivamente.
