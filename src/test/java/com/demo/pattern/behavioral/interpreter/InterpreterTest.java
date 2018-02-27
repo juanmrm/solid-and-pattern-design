@@ -7,7 +7,7 @@ import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestInterpreter {
+public class InterpreterTest {
 
     @Test
     public void evaluateComplexExpression() {

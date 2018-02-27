@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestIterator {
+public class IteratorTest {
 
     @Test
     public void iterator() {

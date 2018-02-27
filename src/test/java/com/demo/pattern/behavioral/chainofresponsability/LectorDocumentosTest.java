@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestLectorDocumentos {
+public class LectorDocumentosTest {
 
 	@Test
 	public void test() {

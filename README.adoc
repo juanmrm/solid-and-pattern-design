@@ -73,3 +73,6 @@ En este patrón, normalmente cada receptor contiene una referencia a otro recept
 
 - Visitor: el cliente representa con un objeto la operación que desea realizar sobre cada uno de los elementos de la estructura.
 Permite definir una nueva operación sin cambiar o conocer la representacion subyacente de los elementos sobre los que opera.
+
+- Mediator: se usa para reducir la complejidad de comunicación entre múltiples objetos o clases. Proporciona una clase de mediador que normalmente maneja todas las comunicaciones
+entre diferentes clases y admite un fácil mantenimiento del código mediante un acoplamiento flexible.
