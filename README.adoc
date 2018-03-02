@@ -82,3 +82,7 @@ entre diferentes clases y admite un fácil mantenimiento del código mediante un
 - Observer: se usa cuando hay una relación one-to-many entre objetos, de tal forma que si un objeto cambia de estado, todos sus objetos dependientes serán notificados automáticamente para que realicen las actualizaciones oportunas.
 
 - State: el comportamiento de clase cambia en función de su estado. Creamos objetos que representan varios estados y un objeto de contexto cuyo comportamiento varía a medida que cambia su objeto de estado.
+
+- Strategy: definir una familia de algoritmos intercambiables. La estrategia permite al algoritmo varíar de forma independiente del cliente que lo usa.
+
+- Template: define el esqueleto de un algoritmo en una operación, difiriendo algunos pasos a las subclases. El método de plantilla permite a las subclases redefinir ciertos pasos de un algoritmo pero sin cambiar la estructura global del algoritmo (marcado como final).
