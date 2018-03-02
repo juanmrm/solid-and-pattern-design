@@ -78,3 +78,5 @@ Permite definir una nueva operación sin cambiar o conocer la representacion sub
 entre diferentes clases y admite un fácil mantenimiento del código mediante un acoplamiento flexible.
 
 - Memento: se usa para restaurar el estado de un objeto a un estado anterior. Capacidad de "punto de control".
+
+- Observer: se usa cuando hay una relación one-to-many entre objetos, de tal forma que si un objeto cambia de estado, todos sus objetos dependientes serán notificados automáticamente para que realicen las actualizaciones oportunas.
