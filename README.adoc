@@ -76,3 +76,5 @@ Permite definir una nueva operación sin cambiar o conocer la representacion sub
 
 - Mediator: se usa para reducir la complejidad de comunicación entre múltiples objetos o clases. Proporciona una clase de mediador que normalmente maneja todas las comunicaciones
 entre diferentes clases y admite un fácil mantenimiento del código mediante un acoplamiento flexible.
+
+- Memento: se usa para restaurar el estado de un objeto a un estado anterior. Capacidad de "punto de control".
