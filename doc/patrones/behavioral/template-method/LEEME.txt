@@ -1,0 +1,17 @@
+La aplicacion permite gestionar la inscripcion a torneos de lucha y a torneo de tenis.
+
+Las dos clases principales son InscripcionLucha e InscripcionTenis
+
+Ambas clases tienen una estructura similiar:
+
+- el metodo principals es apunta(solicitud) que devuelve un boolean indicando si ha podido apuntarse o no
+- la estructura del metodo es:
+   - realiza una serie de validaciones para determinar si la solicitud cumple los requisitos
+   - mira si aun hay plazas disponibles
+   - si cumple los dos requisitos: apunta la solicitud al torneo
+   - si ya hay el maximo numero de apuntados, formaliza el torneo (por ahora solo reserva el polideportivo, 
+      pero esto podria ampliarse en el futuro)
+      
+ Tenéis un test para comprovar que vuestras refactorizaciones no estropean la logica.
+ 
+ ¿Como podriais aplicar el template pattern para evitar las duplicidades en el codigo?
