@@ -5,12 +5,12 @@ import org.junit.Test;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-public class UnicoTest {
+public class SingletonTest {
 
     @Test
     public void singularity() {
-        Unico u1 = Unico.getInstance();
-        Unico u2 = Unico.getInstance();
+        Singleton u1 = Singleton.getInstance();
+        Singleton u2 = Singleton.getInstance();
 
         assertNotNull(u1);
         assertNotNull(u2);

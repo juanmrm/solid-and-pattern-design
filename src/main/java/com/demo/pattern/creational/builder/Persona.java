@@ -37,6 +37,10 @@ public class Persona {
 			persona.edad = edad;
             return new BuilderMenor(persona);
 		}
+
+		public Persona build() {
+			return this.persona;
+		}
 	}
 
 	public static class BuilderMayor {

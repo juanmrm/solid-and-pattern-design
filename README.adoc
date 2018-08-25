@@ -28,14 +28,13 @@ Proporciona más flexibilidad al programa a la hora de decidir que objetos neces
 
 - ABSTRACT FACTORY: factoría de factorías. Crea una instancia de varias familias de clases.
 
-- BUILDER:  construcción de un objeto complejo paso a paso a partir de objetos sencillos.
-Separa la construcción del objeto de su representación.
+- SINGLETON: se asegura de que sólo existe una instancia de la clase y proporciona un único punto de acceso global a ella. El constructor debe ser privado.
+
+- BUILDER: separar la construcción de un objeto complejo de su representación de tal forma que el mismo proceso de construcción sirva para crear distintas representaciones.
 
 - PROTOTYPE: creamos una instancia nueva a partir de otra ya existente que sirve como prototipo. Se usa cuando la creación de una instancia totalmente nueva es muy costosa.
 
 - CLONE: crea un nuevo objeto del mismo tipo y copia todos sus campos.
-
-- SINGLETON: se asegura de que solo existe una instancia de la clase y proporciona un unico punto de acceso global a ella. El constructor debe ser privado.
 
 === Structural
 

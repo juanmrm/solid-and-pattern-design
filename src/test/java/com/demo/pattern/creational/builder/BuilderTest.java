@@ -9,6 +9,20 @@ import static org.junit.Assert.assertNull;
 public class BuilderTest {
 
     @Test
+    public void constuirPersona() {
+        Persona persona = new Persona.Builder("Juan")
+                .setMunicipio("Madrid")
+                .build();
+
+        assertNotNull(persona);
+        assertEquals("Juan", persona.getNombre());
+        assertEquals("Madrid", persona.getMunicipio());
+        assertEquals(0, persona.getEdad());
+        assertNull(persona.getColegio());
+        assertNull(persona.getLugarTrabajo());
+    }
+
+    @Test
     public void construirPersonaMayor() {
         Persona mayor = new Persona.Builder("Maria")
                 .setMunicipio("Selva")
