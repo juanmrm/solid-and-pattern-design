@@ -22,19 +22,20 @@ En general los autores favorecen o se decantan por usar la composición en lugar
 Facilitan la creación de objetos ocultando la lógica de creación y evitando el tener que usar el operador new directamente.
 Proporciona más flexibilidad al programa a la hora de decidir que objetos necesitan ser creados para un determinado caso de uso.
 
-- Abstract Factory: factoría de factorías. Crea una instancia de varias familias de clases.
+- FACTORY: crea objetos ocultando al cliente la lógica necesaria para su instanciación. Es una versión simplificada del factory method pattern.
 
-- Builder:  construcción de un objeto complejo paso a paso a partir de objetos sencillos.
+- FACTORY METHOD: define una interfaz para crear los objetos dejando a las subclases decidir qué clase debe ser instanciada. Se utiliza cuando tenemos lógica general que puede ser compartida en una clase y queremos que pueda cambiar el objeto que se utiliza en esta lógica.
+
+- ABSTRACT FACTORY: factoría de factorías. Crea una instancia de varias familias de clases.
+
+- BUILDER:  construcción de un objeto complejo paso a paso a partir de objetos sencillos.
 Separa la construcción del objeto de su representación.
 
-- Factory Method: lo utilizamos para crear objetos sin tener que especificar la clase exacta del objeto de que queremos crear y sin llamar a su constructor directamente.
-Esto lo conseguimos creando los objetos con el factory method especificado en una interfaz e implementado en clases o en una clase base y sobreescrito en las clases que la extiendebn.
+- PROTOTYPE: creamos una instancia nueva a partir de otra ya existente que sirve como prototipo. Se usa cuando la creación de una instancia totalmente nueva es muy costosa.
 
-- Prototype: creamos una instancia nueva a partir de otra ya existente que sirve como prototipo. Se usa cuando la creación de una instancia totalmente nueva es muy costosa.
+- CLONE: crea un nuevo objeto del mismo tipo y copia todos sus campos.
 
-- Clone: crea un nuevo objeto del mismo tipo y copia todos sus campos.
-
-- Singleton: se asegura de que solo existe una instancia de la clase y proporciona un unico punto de acceso global a ella. El constructor debe ser privado.
+- SINGLETON: se asegura de que solo existe una instancia de la clase y proporciona un unico punto de acceso global a ella. El constructor debe ser privado.
 
 === Structural
 
