@@ -1,5 +1,6 @@
 package com.demo.pattern.structural.bridge;
 
+// Concrete implementator of Draw
 public class RedCircle implements Draw {
 
     @Override

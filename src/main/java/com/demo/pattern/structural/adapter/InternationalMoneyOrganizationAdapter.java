@@ -1,12 +1,11 @@
 package com.demo.pattern.structural.adapter;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class InternationalMoneyOrganizationAdapter implements InternationalMoneyOrganization{
 
     private final BancoNostrum bancoNostrum;
-
-    public InternationalMoneyOrganizationAdapter(final BancoNostrum bancoNostrum) {
-        this.bancoNostrum = bancoNostrum;
-    }
 
     @Override
     public void transfer(int cantidad, String cliente) {

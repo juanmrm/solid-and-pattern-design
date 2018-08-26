@@ -40,13 +40,15 @@ Proporciona más flexibilidad al programa a la hora de decidir que objetos neces
 
 Se refieren a la composición de clases y objetos. Se usan para componer interfaces y definir formas de componer objetos para obtener nuevas funcionalidades.
 
-- Adapter: la motivación es convertir la interfaz de una clase en otra interfaz que los clientes esperan. Permite que las clases funcionen juntas, lo que de otra forma no podría ser debido a interfaces incompatibles.
+- ADAPTER OR WRAPPER: la motivación es convertir la interfaz de una clase en otra interfaz que los clientes esperan. Permite que las clases funcionen juntas, lo que de otra forma no podría ser debido a interfaces incompatibles.
 
-- Bridge: usado cuando tenemos que desacoplar una abstracción de su implementación para que las 2 partes puedan modificarse independientemente.
+- BRIDGE: usado cuando tenemos que desacoplar una abstracción (interfaz) de su implementación para que las 2 partes puedan modificarse independientemente debido a cambios constantes en ambas partes. Posible a través de una interfaz que sirve para desacoplar.
 
-- Composite: permite que el cliente trate objetos individuales y compuestos de forma uniforme. Esta clase proporciona formas de modificar su grupo de objetos.
+- FILTER or CRITERIA: filtrar un conjunto de objetos utilizando diferentes criterios y encadenándolos de forma desacoplada mediante operaciones lógicas (and, or...).
 
-- Decorator: la motivacion es agregar nuevas funcionalidades a un objeto existente sin alterar su estructura. Crea una clase de decorador que envuelve la clase original y proporciona la uncionalidad adicional pero manteniendo la firma de los métodos de clase intactos.
+- COMPOSITE: permite que el cliente trate objetos individuales y compuestos de forma uniforme. Esta clase proporciona formas de modificar su grupo de objetos.
+
+- DECORATOR: la motivacion es agregar nuevas funcionalidades a un objeto existente sin alterar su estructura. Crea una clase de decorador que envuelve la clase original y proporciona la funcionalidad adicional pero manteniendo la firma de los métodos de clase intactos.
 
 - Facade: la motivacion es ocultar las complejidades del sistema y proporcionar una interfaz al cliente pero simplificada. Incluye una sola clase que proporciona métodos simplificados requeridos por el cliente y delega llamadas a métodos de clases de sistema existentes.
 Esto no implica que no vayamos a poder acceder a los sistemas de más bajo nivel, simplemente es una interfaz de más alto nivel que nos simplificará ciertas operaciones.

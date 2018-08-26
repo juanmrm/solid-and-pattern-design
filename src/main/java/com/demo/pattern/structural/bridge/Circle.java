@@ -1,5 +1,6 @@
 package com.demo.pattern.structural.bridge;
 
+// Function as a Bridge between Shape and Draw
 public class Circle extends Shape {
 
     private int x, y, radius;

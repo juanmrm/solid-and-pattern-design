@@ -1,5 +1,6 @@
 package com.demo.pattern.structural.bridge;
 
+// Abstraction
 public abstract class Shape {
 
     protected Draw draw;

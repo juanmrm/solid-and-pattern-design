@@ -1,6 +1,7 @@
 package com.demo.pattern.structural.composite;
 
 public class CompositePatternDemo {
+
     public static void main(String[] args) {
         Employee CEO = new EmployeeImpl("John","CEO", 30000);
         Employee headSales = new EmployeeImpl("Robert","Head Sales", 20000);
