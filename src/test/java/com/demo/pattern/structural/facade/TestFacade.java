@@ -36,8 +36,8 @@ public class TestFacade {
 	public void test_facade() {
 		// usa aqui tu servicio facade para dar de alta un usuario
 		// con los datos particulares nombreCliente e emailCliente
-        RegistroExpress registro = new RegistroExpressImpl(configuracion, fidelizacion, comunicacion);
-        registro.registro(nombreCliente, emailCliente);
+		RegistroExpressFacade registro = new RegistroExpressFacade(configuracion, fidelizacion, comunicacion);
+        registro.registroExpres(nombreCliente, emailCliente);
 
 		// deja esta invocacion para comprobar el comportamiento de tu facade
 		compruebaInscripion();

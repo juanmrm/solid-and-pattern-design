@@ -3,14 +3,13 @@ package com.demo.pattern.structural.facade;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class RegistroExpressImpl implements RegistroExpress {
+public class RegistroExpressFacade {
 
     private final ServicioConfiguracion configuracion;
     private final ServicioFidelizacion fidelizacion;
     private final ServicioComunicacion comunicacion;
 
-    @Override
-    public void registro(final String nombreCliente, final String emailCliente) {
+    public void registroExpres(final String nombreCliente, final String emailCliente) {
         fidelizacion.crearTarjeta(nombreCliente, FidelizacionTipoEnum.BASICA);
         configuracion.addEmail(nombreCliente, emailCliente);
         // crea una preferencia para email semanal en formato html
