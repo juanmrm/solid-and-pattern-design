@@ -41,7 +41,7 @@ public class ProcesadorDocumentos {
 
         @Override
         public Optional<String> processDocument(ProcessChain pc, Documento doc) {
-            if(currentPosition< procesadores.size()) {
+            if(currentPosition < procesadores.size()) {
                 DocumentProcess processor = procesadores.get(currentPosition);
                 currentPosition++;
                 return processor.processDocument(pc, doc);

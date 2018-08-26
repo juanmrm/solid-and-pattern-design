@@ -4,7 +4,7 @@ En particular, tenemos distintos lectores para los distintos formatos de documen
 la interface LectorDocumentos y sus distintas implementaciones: LectorPdf, LectorOdt ... (se espera que
 se vaya incrementando el numero de lectores disponibles).
 
-Una funcionalidad básica es ProcesadorDocumentos, que permite, dada una lista de documentos, devolver 
+Una funcionalidad básica del ProcesadorDocumentos es que permita, dada una lista de documentos, devolver
 una cadena con el contenido de todos ellos procesado por su lector correspondiente (en funcion del tipo 
 de documento).
 
