@@ -58,7 +58,7 @@ public class Camiseta {
                     "                                                                                                                             \n"
             ;
 
-    public String gerCamisetaJugador(Integer numero) {
+    public String getCamisetaJugador(Integer numero) {
         return this.camiseta.replace("X", numero.toString());
     }
 
