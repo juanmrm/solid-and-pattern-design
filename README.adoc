@@ -66,7 +66,7 @@ Están específicamente relacionados con la comunicación entre objetos.
 - CHAIN OF RESPONSIBILITY: crea una cadena de objetos receptores para una solicitud. Este patrón desacopla al emisor y al receptor de una solicitud en función del tipo de solicitud.
 En este patrón, normalmente cada receptor contiene una referencia a otro receptor. Si un objeto no puede manejar la solicitud, pasa el mismo al siguiente receptor y así sucesivamente.
 
-- Command: una request se envuelve bajo un objeto como comando y se pasa al objeto invocador. El Invoker busca el objeto apropiado que puede manejar este comando y pasa el comando al objeto correspondiente que lo ejecuta.
+- COMMAND: una request se envuelve bajo un objeto como comando y se pasa al objeto invocador. El Invoker busca el objeto apropiado que puede manejar este comando y pasa el comando al objeto correspondiente que lo ejecuta.
 
 - Interpreter: dado un idioma, defina una representación para su gramática junto con un intérprete que use la representación para interpretar oraciones en el lenguaje.
 
