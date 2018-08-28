@@ -1,12 +1,11 @@
 package com.demo.pattern.behavioral.mediator;
 
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 public class Coche {
 
-    private CocheMediator mediator;
-
-    public Coche(CocheMediator mediator) {
-        this.mediator = mediator;
-    }
+    private final CocheMediator mediator;
 
     public void enciende() {
 	    this.mediator.enciendeRadio();

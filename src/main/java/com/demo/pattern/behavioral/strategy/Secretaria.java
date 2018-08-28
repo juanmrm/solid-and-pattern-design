@@ -8,7 +8,8 @@ public class Secretaria {
         alumno.setEstrategia(getEstrategiaParaAlumno(alumno));
         return matricula.getMaterias()
                 .stream()
-                .mapToDouble(alumno.getEstrategia()::precioPagado).sum();
+                .mapToDouble(alumno.getEstrategia()::precioPagado)
+                .sum();
     }
 
     private EstrategiaDePago getEstrategiaParaAlumno(Alumno alumno) {

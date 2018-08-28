@@ -61,29 +61,27 @@ Este recuerda la identidad de este objeto real y reenvía la solicitud a este ob
 
 === Behavioral
 
-Están específicamente relacionados con la comunicación entre objetos.
+Están específicamente relacionados con la comunicación entre objetos y su comportamiento.
 
 - CHAIN OF RESPONSIBILITY: crea una cadena de objetos receptores para una solicitud. Este patrón desacopla al emisor y al receptor de una solicitud en función del tipo de solicitud.
 En este patrón, normalmente cada receptor contiene una referencia a otro receptor. Si un objeto no puede manejar la solicitud, pasa el mismo al siguiente receptor y así sucesivamente.
 
 - COMMAND: una request se envuelve bajo un objeto como comando y se pasa al objeto invocador. El Invoker busca el objeto apropiado que puede manejar este comando y pasa el comando al objeto correspondiente que lo ejecuta.
 
-- Interpreter: dado un idioma, defina una representación para su gramática junto con un intérprete que use la representación para interpretar oraciones en el lenguaje.
+- INTERPRETER: dado un idioma, defina una representación para su gramática junto con un intérprete que use la representación para interpretar oraciones en el lenguaje.
 
-- Iterator: se utiliza para obtener una forma de acceder a los elementos de una colección de forma secuencial sin necesidad de conocer su representación subyacente.
+- ITERATOR: se utiliza para obtener una forma de acceder a los elementos de una colección de forma secuencial sin necesidad de conocer su representación subyacente.
 
-- Visitor: el cliente representa con un objeto la operación que desea realizar sobre cada uno de los elementos de la estructura.
-Permite definir una nueva operación sin cambiar o conocer la representacion subyacente de los elementos sobre los que opera.
+- VISITOR: el cliente define la operación que desea realizar sobre cada uno de los elementos de la estructura. Permite definir nuevas operaciones sin tener que cambiar o conocer la representacion subyacente de los elementos sobre los que opera.
 
-- Mediator: se usa para reducir la complejidad de comunicación entre múltiples objetos o clases. Proporciona una clase de mediador que normalmente maneja todas las comunicaciones
-entre diferentes clases y admite un fácil mantenimiento del código mediante un acoplamiento flexible.
+- MEDIATOR: define un objeto que encapsula cómo un conjunto de objetos interactúan entre sí. Promueve un bajo acoplamiento entre los objetos que ya no necesitan referenciarse entre si. Maneja las comunicaciones entre las clases, permitiendo variar el comportamiento de forma independiente.
 
-- Memento: se usa para restaurar el estado de un objeto a un estado anterior. Capacidad de "punto de control".
+- MEMENTO (recuerdo en inglés): se usa para restaurar el estado de un objeto a un estado anterior. Capacidad de "punto de control". Se debe distinguir entre shalow copy (comparte punteros) vs deep copy (no comparte punteros), que es lo que necesitamos usar aquí.
 
-- Observer: se usa cuando hay una relación one-to-many entre objetos, de tal forma que si un objeto cambia de estado, todos sus objetos dependientes serán notificados automáticamente para que realicen las actualizaciones oportunas.
+- OBSERVER: se usa cuando hay una relación one-to-many entre objetos, de tal forma que si un objeto cambia de estado, todos sus objetos dependientes serán notificados automáticamente para que realicen las actualizaciones oportunas.
 
-- State: el comportamiento de clase cambia en función de su estado. Creamos objetos que representan varios estados y un objeto de contexto cuyo comportamiento varía a medida que cambia su objeto de estado.
+- STATE: el comportamiento de la clase cambia en función de su estado. Creamos objetos que representan distintos estados y un objeto de contexto cuyo comportamiento varía según cambia su objeto de estado.
 
-- Strategy: definir una familia de algoritmos intercambiables. La estrategia permite al algoritmo varíar de forma independiente del cliente que lo usa.
+- STRATEGY: definir una familia de algoritmos intercambiables. La estrategia permite al algoritmo varíar de forma independiente del cliente que lo usa.
 
-- Template: define el esqueleto de un algoritmo en una operación, difiriendo algunos pasos a las subclases. El método de plantilla permite a las subclases redefinir ciertos pasos de un algoritmo pero sin cambiar la estructura global del algoritmo (marcado como final).
+- TEMPLATE: define el esqueleto de un algoritmo en una operación, difiriendo algunos pasos a las subclases. El método de plantilla permite a las subclases redefinir ciertos pasos de un algoritmo pero sin cambiar la estructura global del algoritmo (marcado como final).

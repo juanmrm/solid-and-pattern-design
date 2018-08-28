@@ -1,17 +1,15 @@
 package com.demo.pattern.behavioral.mediator;
 
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
+@RequiredArgsConstructor
 public class Telefono {
 
 	@Getter
 	private boolean musicaOn = false;
 
-    private CocheMediator mediator;
-
-    public Telefono(CocheMediator mediator) {
-        this.mediator = mediator;
-    }
+    private final CocheMediator mediator;
 
     public void recibeLlamada() {
         mediator.apagaRadio();
