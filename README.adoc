@@ -2,15 +2,25 @@
 
 Principios basicos de la POO (Programación Orientada a Objetos).
 
-- S -> Single responsability principle.
+- S -> Single responsability principle (SRP)
 
-- O -> Open / Closed principle.
+    Una clase debe de tener una sóla razón para el cambio.
 
-- L -> Liskov substitution principle.
+- O -> Open / Closed principle (OCP)
 
-- I -> Interface segregation principle.
+    Las entidades de software (clases, modulos, funciones...) deben estar abiertas para la extensión y cerradas para la modificación
+
+- L -> Liskov substitution principle (LSP)
+
+    Si S es un subclase de T, deberiamos de poder reemplazar T en un método por S sin que el funcionamiento se vea alterado (sustituciones segura)
+
+- I -> Interface segregation principle (ISP)
+
+    No debemos obligar a los clientes a depender de métodos que no utilizan. Seperar en distintas interfaces que luego sean implementadas por la clase.
 
 - D -> Dependency Inversion principle.
+
+
 
 == Patterns
 '''

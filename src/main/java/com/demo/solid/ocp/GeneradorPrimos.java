@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 
 public class GeneradorPrimos {
 
-	public List<Integer> primos (int limit) {
+	public final List<Integer> primos (int limit) {
 	    List<Integer> primos = IntStream.range(2, limit - 1)
                 .filter(this::esPrimo)
                 .boxed()
